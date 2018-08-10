@@ -1,0 +1,21 @@
+<h2>
+  {{ title }}
+</h2>
+
+
+
+<ul>
+<li *ngFor="let product of products">
+{{ product.name }}
+</li>
+</ul>
+
+
+<button (click)="getProducts()">Get Products</button>
+
+<br/><br/>
+<input id="name" [(ngModel)]="name"/>
+<br/><br/>
+<button (click)="createProduct()">Create Product</button>
+
+<p>{{ msg }}</p>
